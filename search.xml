@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>javascript之&lt;script&gt;</title>
+      <link href="/2019/12/21/javascript-0/"/>
+      <url>/2019/12/21/javascript-0/</url>
+      
+        <content type="html"><![CDATA[<h4 id="lt-script-gt-元素"><a href="#lt-script-gt-元素" class="headerlink" title="<script>元素"></a>&lt;script&gt;元素</h4><p>如果把网页比作一个人，那么HTML就是人的骨架，CSS就是人的服饰，而javascript就是肌肉和神经，虽然这样的比喻不太适合，但是多多少少两者都有点类似。要想在HTML中使用JavaScript，就需要使用&lt;script&gt;元素。平时我们使用JavaScript都是使用类似于<code>&lt;script type="text/javascript" src="xxx/xxx.js"&gt;</code>，其实正式的HTML规范中，&lt;script&gt;元素还有其他属性</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Javascript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Javascript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java面与向对象</title>
       <link href="/2019/12/20/java/"/>
       <url>/2019/12/20/java/</url>
